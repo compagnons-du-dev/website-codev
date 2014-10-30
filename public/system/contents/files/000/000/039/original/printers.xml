@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Fri Oct 17 15:43:06 2014 as: nmap -p 9100,515,631 -oX printers.xml 192.168.1.1/24 -->
+<nmaprun scanner="nmap" args="nmap -p 9100,515,631 -oX printers.xml 192.168.1.1/24" start="1413553386" startstr="Fri Oct 17 15:43:06 2014" version="6.47" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="515,631,9100"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="17826" rttvar="26392" to="123394"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="23683" rttvar="21228" to="108595"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="74839" rttvar="69317" to="352107"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="9377" rttvar="15148" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="150749" rttvar="183069" to="883025"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.42" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="87152" rttvar="77877" to="398660"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="28122" rttvar="26009" to="132158"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="359" rttvar="2260" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="73442" rttvar="72747" to="364430"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="60983" rttvar="54669" to="279659"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.63" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="79959" rttvar="65436" to="341703"/>
+</host>
+<host starttime="1413553386" endtime="1413553407"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="397646" rttvar="451038" to="2201798"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="80313" rttvar="67871" to="351797"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.67" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="160529" rttvar="191121" to="925013"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.74" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="15552" rttvar="24151" to="112156"/>
+</host>
+<host starttime="1413553386" endtime="1413553408"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.75" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="88480" rttvar="88480" to="442400"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.76" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="82239" rttvar="67645" to="352819"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.81" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="21346" rttvar="19531" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.86" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="77830" rttvar="73620" to="372310"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.87" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="169763" rttvar="160807" to="812991"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.93" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="33792" rttvar="24591" to="132156"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.98" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="30717" rttvar="23445" to="124497"/>
+</host>
+<host starttime="1413553386" endtime="1413553407"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="80391" rttvar="64171" to="337075"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="24908" rttvar="23524" to="119004"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.111" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="29110" rttvar="23035" to="121250"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="25752" rttvar="17172" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553407"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.120" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="70975" rttvar="60269" to="312051"/>
+</host>
+<host starttime="1413553386" endtime="1413553407"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.127" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="19361" rttvar="19361" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553408"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.136" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="193240" rttvar="74779" to="492356"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.138" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="20677" rttvar="15439" to="100000"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="36712" rttvar="24793" to="135884"/>
+</host>
+<host starttime="1413553386" endtime="1413553407"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.150" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="79264" rttvar="70737" to="362212"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.156" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="134621" rttvar="136677" to="681329"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.166" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="60608" rttvar="48033" to="252740"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="67758" rttvar="51680" to="274478"/>
+</host>
+<host starttime="1413553386" endtime="1413553406"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.1.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="515"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="21569" rttvar="25850" to="124969"/>
+</host>
+<runstats><finished time="1413553408" timestr="Fri Oct 17 15:43:28 2014" elapsed="21.81" summary="Nmap done at Fri Oct 17 15:43:28 2014; 256 IP addresses (36 hosts up) scanned in 21.81 seconds" exit="success"/><hosts up="36" down="220" total="256"/>
+</runstats>
+</nmaprun>

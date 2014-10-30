@@ -1,0 +1,33 @@
+<% if Article.where(publish: true).count > 0 %>
+  <div class="home-articles">
+    <h2 class="text-primary text-center home-title">Actualité</h2>
+
+    <div class="articl">
+
+    <% Article.where(publish: true).order(created_at: :desc).each do |article| %>
+      <%= link_to article_path(article) do %>
+        <div class="row">
+      <div class="col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
+        <%= image_tag article.image.url(:thumb), class: 'article-photo' %>
+      </div>
+      <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12">
+        <h3 class="article-title text-primary"><%= article.display_name %></h3>
+        <p class="article-content-preview"><%= article_desc(article) %></p>
+        <p class="text-muted"><%= l article.created_at, format: :custom %></p>
+      </div>
+    </div>
+
+    <% end %>
+
+    <br>
+
+    <% end %>
+
+
+    <div class="text-center">
+      <%= link_to "Plus d'actualités", articles_path, class: 'btn btn-lg btn-primary text-center' %>
+    </div>
+  </div>
+  </div>
+  <hr class="divider">
+<% end %>

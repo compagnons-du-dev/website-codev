@@ -1,0 +1,138 @@
+
+  <ol class="breadcrumb">
+
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Administration <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <%= render 'admin/nav'%>
+        </ul>
+      </li>
+
+        <li><%= link_to 'Pages', admin_pages_path %></li>
+  <li class="active"><%= @page.display_name %></li>
+    </ol>
+
+<div class="row">
+  <div class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-1  col-xs-10">
+    <%= form_for [:admin, @page], html: {class: 'form-horizontal well'} do |f| %>
+      <h3 class="text-center">Editer page</h3>
+      <br>
+      <% if @page.errors.any? %>
+        <div class="alert alert-danger">
+          <%= @page.errors.full_messages.map { |msg| content_tag(:p, msg) }.join.html_safe %>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <h4>Titre</h4>
+          <%= f.text_field :name, class: 'form-control', placeholder: 'Nom', value: @page.display_name %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <h4>Tags</h4>
+          <%= f.text_field :tags, class: 'form-control', placeholder: 'Tags', value: @page.tags.map{|t| t.name}.join(' ') %>
+        </div>
+      </div>
+
+      <% if @page.category %>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <h4>Categorie</h4>
+
+            <%= f.select :category, options_for_select( Category.all.map {|c| [c.display_name, c.name]}, selected: @page.category.name), {},class: 'form-control' %>
+          </div>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <h4>Publier</h4>
+          <%= f.check_box :publish %>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+          <%= link_to 'Voir', page_path(@page), class: 'btn btn-primary btn-submit' %>
+        </div>
+        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+          <%= f.submit 'Valider', class: 'btn btn-success btn-submit' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+<div class="col-lg-9 col-md-offset-0 col-md-9 col-sm-offset-0 col-sm-9 col-xs-offset-1 col-xs-10">
+    <% unless @page.contents.map{|c| c.fixed}.index(true) %>
+    <div class="row add-btn-content">
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-primary" data-toggle="modal" data-target="#new-content-text">
+          <h2><span class="glyphicon glyphicon-pencil"></span></h2>
+          <h5>Ajouter <br> texte</h5>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-warning" data-toggle="modal" data-target="#new-content-text-image">
+          <h2>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <span class="glyphicon glyphicon-picture"></span>
+          </h2>
+          <h5>Ajouter <br> texte et image</h5>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-success" data-toggle="modal" data-target="#new-content-embed">
+          <h2><span class="glyphicon glyphicon-link"></span></h2>
+          <h5>Ajouter <br> lien embedded</h5>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-info" data-toggle="modal" data-target="#new-content-image">
+          <h2><span class="glyphicon glyphicon-picture"></span></h2>
+          <h5>Ajouter image <br><br></h5>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-danger" data-toggle="modal" data-target="#new-content-file">
+          <h2><span class="glyphicon glyphicon-file"></span></h2>
+          <h5>Ajouter <br> piece jointe</h5>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="btn width-max btn-default" data-toggle="modal" data-target="#new-content-carousel">
+          <h2>
+            <span class="span-plus">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </span>
+            <span class="glyphicon glyphicon-picture"></span>
+            <span class="span-plus">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </span>
+          </h2>
+          <h5>Ajouter <br> carousel</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <% end %>
+
+    <% if flash[:alert_context] %>
+      <div class="alert alert-<%= flash[:alert_context]['color'] %>">
+        <% flash[:alert_context]['messages'].each do |message| %>
+          <%= content_tag(:p, message) %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= render template: 'admin/contents/index', locals: {contents: @page.contents.order(:position), associate: @article} %>
+    <%= render template: 'admin/contents/new', locals: {associate: @page} %>
+  </div>
+</div>

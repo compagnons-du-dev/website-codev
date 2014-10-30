@@ -1,0 +1,39 @@
+
+<div>
+  <h1>Blog</h1>
+</div>
+
+  <div class="articles">
+    <% if @articles.any? %>
+  <% @articles.each do |article| %>
+    <%= link_to article_path(article) do %>
+    <hr class="divider">
+    
+      <div class="row">
+    <div class="col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
+      <%= image_tag article.image.url(:thumb), class: 'article-photo' %>
+    </div>
+    <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12">
+      <h3 class="article-title text-primary"><%= article.display_name %></h3>
+      <p class="article-content-preview"><%= article_desc(article) %></p>
+
+      <p class="text-muted"><%= l article.created_at, format: :custom %></p>
+    </div>
+  </div>
+
+  <% end %>
+
+
+  <% end %>
+  <div class="text-center">
+    <%= will_paginate @articles, renderer: BootstrapPagination::Rails, previous_label: 'Précedent', next_label: 'Suivant' %>
+  </div>
+
+  <% else %>
+
+  <hr class="divider">
+
+  <h3 class="text-muted">Aucun articles</h3>
+
+  <% end %>
+</div>

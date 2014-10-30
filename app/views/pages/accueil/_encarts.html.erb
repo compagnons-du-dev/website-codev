@@ -1,0 +1,60 @@
+<hr class="divider">
+<div class="home-items">
+  <div class="row text-center">
+    <h1 class="text-primary home-title">Nos missions</h1>
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <%= image_tag(@page.content('encart-1').thumb || 'home-education.png') %>
+        </div>
+      </div>
+
+      <h2 class="home-items-title text-<%= color %>"><%= @page.content('encart-1').title %></h2>
+      <p class="home-items-content">
+        <%= @page.content('encart-1').value %>
+      </p>
+      <h4 class="text-primary hidden-lg hidden-md hidden-sm"><%= link_to 'En savoir +', @page.content('encart-1').link  %></h4>
+    </div>
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <%= image_tag(@page.content('encart-2').thumb || 'home-formation.png') %>
+        </div>
+      </div>
+
+
+      <h2 class="home-items-title text-<%= color %>"><%= @page.content('encart-2').title %></h2>
+      <p class="home-items-content">
+        <%= @page.content('encart-2').value %>
+      </p>
+      <h4 class="text-primary hidden-lg hidden-md hidden-sm"><%= link_to 'En savoir +', @page.content('encart-2').link  %></h4>
+    </div>
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <%= image_tag(@page.content('encart-3').thumb || 'home-line-social.png') %>
+        </div>
+      </div>
+
+      <h2 class="home-items-title text-<%= color %>"><%= @page.content('encart-3').title %></h2>
+      <p class="home-items-content">
+        <%= @page.content('encart-3').value %>
+      </p>
+      <h4 class="text-primary hidden-lg hidden-md hidden-sm"><%= link_to 'En savoir +', @page.content('encart-3').link  %></h4>
+    </div>
+  </div>
+
+  <div class="row text-center hidden-xs">
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+      <h4 class="text-primary hidden-xs"><%= link_to 'En savoir +', @page.content('encart-1').link  %></h4>
+    </div>
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+      <h4 class="text-primary hidden-xs"><%= link_to 'En savoir +', @page.content('encart-2').link  %></h4>
+    </div>
+    <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+      <h4 class="text-primary hidden-xs"><%= link_to 'En savoir +', @page.content('encart-3').link  %></h4>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">

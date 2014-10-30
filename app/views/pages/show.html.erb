@@ -1,0 +1,17 @@
+    <% if lookup_context.template_exists?(@page.name, "pages", true) %>
+  <%= render partial: "pages/#{@page.name}" %>
+<% else %>
+
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1">
+  <div class="partials">
+    <% @contents.each do |content| %>
+        <%= render "layouts/partials/#{content.partial}", value: content.value.html_safe, content: content %>
+    <% end %>
+  </div>
+
+  <%= render template: 'tags/index', locals: {tags: @page.tags} %>
+  </div>
+</div>
+
+<% end %>

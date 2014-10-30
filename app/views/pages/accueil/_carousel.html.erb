@@ -1,0 +1,11 @@
+<% content_for(:head) do %>
+  <div class="home-carousel" style="background: url(<%= asset_url(Page.find_by(name: 'accueil').contents.where(name: 'slogan').first.image.url) %>) no-repeat center; background-size: cover;">
+    <div class="container v-container">
+      <div class="row v-center">
+        <div class="col-lg-6">
+          <h1 class="home-carousel-title"><%= @page.content('slogan').title %></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
