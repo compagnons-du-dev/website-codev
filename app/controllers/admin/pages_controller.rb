@@ -52,7 +52,7 @@ class Admin::PagesController < AdminController
     @page = Page.friendly.find params[:id]
   end
   def set_category
-    @category = Category.find_by(name: params[:page][:category].parameterize) if params[:page][:category]
+    @category = Category.find_by(name: params[:page][:category]) if params[:page][:category]
   end
 
   def set_tags

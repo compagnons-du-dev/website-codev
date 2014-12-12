@@ -4,7 +4,6 @@ class Article < ActiveRecord::Base
   has_many :tags, dependent: :destroy
 
   validates :name, :image, presence: true
-  before_save { self.name = name.parameterize }
 
   has_attached_file :image, default_url: 'logo.png', styles: {thumb: '150x150#', large: '600x225#'}
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/

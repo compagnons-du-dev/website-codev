@@ -4,7 +4,6 @@ class Page < ActiveRecord::Base
   belongs_to :category
 
   validates :name, presence: true
-  before_save { self.name = name.parameterize }
 
   extend FriendlyId
   friendly_id :name, use: :slugged

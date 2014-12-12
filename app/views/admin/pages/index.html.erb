@@ -41,7 +41,7 @@
         </td>
 
         <td><%= link_to 'Editer', edit_admin_page_path(page), class: 'btn btn-info' %></td>
-        <td><%= link_to 'Supprimer',  admin_page_path(page), class: 'btn btn-danger remove', method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer définitivement cette page' } unless page.name == 'accueil' %></td>
+        <td><%= link_to 'Supprimer',  admin_page_path(page), class: 'btn btn-danger remove', method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer définitivement cette page ?' } unless page.name == 'accueil' %></td>
       </tr>
 
       <% end %>

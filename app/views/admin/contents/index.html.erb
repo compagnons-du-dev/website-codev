@@ -168,7 +168,7 @@
             <%= link_to '<span class="glyphicon glyphicon-chevron-down"></span>'.html_safe, admin_content_path(content, position: 'down'), method: :put, class: 'btn btn-default btn-submit' %>
           </div>
           <div class="col-lg-4">
-            <%= link_to 'Supprimer', admin_content_path(content), method: :delete, class: 'btn btn-danger btn-submit' %>
+            <%= link_to 'Supprimer', admin_content_path(content), method: :delete,data: { confirm: 'Êtes-vous sûr de vouloir supprimer définitivement ce paragraphe ?' }, class: 'btn btn-danger btn-submit' %>
           </div>
           <div class="col-lg-4">
             <%= f.submit 'Enregistrer', class: 'btn btn-success btn-submit' %>
