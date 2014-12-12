@@ -17,3 +17,6 @@
 
 .dotenv
 .env
+
+# Ignore image file
+/public/system/contents/images/*

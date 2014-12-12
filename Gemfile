@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Basic
-gem 'rails', '4.1.5'
+gem 'rails', '4.1.8'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
