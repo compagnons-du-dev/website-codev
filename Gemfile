@@ -37,6 +37,7 @@ gem 'dotenv-rails'
 
 group :development do
   gem 'spring'
+  gem 'dotenv-rails'
   gem 'sqlite3'
   gem 'quiet_assets'
   gem 'better_errors'

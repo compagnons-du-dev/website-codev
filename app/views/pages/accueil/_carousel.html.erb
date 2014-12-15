@@ -2,11 +2,7 @@
   <div class="home-carousel" style="background: url(<%= asset_url(Page.find_by(name: 'accueil').contents.where(name: 'slogan').first.image.url) %>) no-repeat center; background-size: cover;">
     <div class="container v-container">
       <div class="row v-center">
-        <div class="col-lg-3">
-          <%= image_tag 'logo.png', id: 'logo-carousel' %>
-        </div>
-
-        <div class="col-lg-7">
+        <div class="col-lg-8">
           <h1 class="home-carousel-title" style="color: <%= @page.content('slogan').value %> ;"><%= @page.content('slogan').title %></h1>
         </div>
       </div>

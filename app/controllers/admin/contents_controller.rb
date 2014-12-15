@@ -1,5 +1,5 @@
 class Admin::ContentsController < AdminController
-  before_filter :set_associate
+  before_filter :set_associate, except: [:update]
   before_filter :set_content, except: [:create]
 
   def destroy
