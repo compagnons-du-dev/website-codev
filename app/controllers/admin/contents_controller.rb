@@ -55,9 +55,9 @@ class Admin::ContentsController < AdminController
 
   def set_associate
     if params[:page_id]
-      @associate = Page.friendly.find_by(name: params[:page_id])
+      @associate = Page.friendly.find params[:page_id]
     else
-      @associate = Article.friendly.find_by(name: params[:article_id])
+      @associate = Article.friendly.find params[:article_id]
     end
   end
 

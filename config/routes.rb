@@ -17,7 +17,7 @@ Rails.application.routes.draw do
       resources :contents, only: [:create, :update]
     end
     resources :pages, except: [:show] do
-      resources :contents, only: [:create, :update]
+      resources :contents, only: [:create, :update, :destroy]
     end
     resources :categories, except: [:show]
   end

@@ -49,5 +49,9 @@ class Content < ActiveRecord::Base
     end
   end
 
+  def associate
+    self.page || self.article
+  end
+
   AVAILABLE_SELECT_PARTIALS = [['Texte seul', 'content_text'], ['Image à gauche', 'content_left'], ['Image à droite', 'content_right'], ['Lien embed', 'content_embed']]
 end
